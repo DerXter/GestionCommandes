@@ -13,7 +13,11 @@ Elle propose les fonctionnalités suivantes à l’application :
 ## Pour démarrer l'application, assurez vous d'avoir *npm* et *strapi* installés sur votre ordinateur :  
 > Le dossier __menu__ correspond à l'API  
 
-## Placer vous dans le dossier GestionCommandes/menu et lancer la commande suivante pour démarrer l'api:  
+## Placez vous dans la racine du projet et lancez la commande suivante pour installer les dépendances:
+
+	npm install
+	
+## Placer vous ensuite dans le dossier GestionCommandes/menuLancez et lancer cette commande pour démarrer l'API:
 
 	strapi start  
   
