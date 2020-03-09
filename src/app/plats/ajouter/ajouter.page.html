@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Ajouter un plat</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button ></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <form #form="ngForm" (ngSubmit)="Ajouter(form)">
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Ajout d'un nouveau plat</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-input name="nom" type="text" placeholder="nom" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="prix" type="number" placeholder="prix" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="description" type="text" placeholder="description" ngModel required></ion-input>
+            </ion-item>
+            <div class="ion-margin-top">
+            <ion-button type="submit" [disabled]="form.invalid" expand="block">valider</ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</form>
+</ion-content>

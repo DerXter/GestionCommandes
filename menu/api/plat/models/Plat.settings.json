@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "plats",
+  "info": {
+    "name": "plat",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "prix": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
